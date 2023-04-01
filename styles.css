@@ -1,0 +1,88 @@
+
+.bckgr-picture {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-weight: bold;
+            
+}
+
+.bckgr-picture::before {
+  content: '';
+  background: url('najlacam-f8TajCVv4s8-unsplash.jpg') 
+      no-repeat center center/cover;
+  position: absolute;
+  opacity: 0.35;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  
+  }
+
+#dropdown {
+  padding-bottom: 774px;
+  position: relative;
+  padding-right: 200px;
+  color:#ff009f;
+  opacity: 1;
+  text-align: center;
+  display: inline-grid;
+  float: right;
+  font-size: x-large;
+}
+#h1{
+  text-align: center;
+  position: relative;
+  padding-left: 200px;
+  /* padding-bottom: 800px; */
+  color: #ff009f;
+  opacity: 1;
+  font-style: italic;
+  font-size: 35px;
+  width: 200vh;
+  margin-bottom: 800px;
+}
+  
+#myPic{
+  
+}
+#results{
+align-items: center;
+max-width: 400px;
+position: absolute;
+
+}
+
+#firstBtn{
+  background-color: #c35c88;
+    border: none;
+    color: #fffcff;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+    border-radius: 250px;
+}
+#buttonDiv {
+  position: absolute;
+  margin-top: 800px;
+}
+#selectBtn{
+    background-color: #c35c88;
+    border: none;
+    color: #fffcff;
+    /* padding: 10px 6px; */
+    text-decoration: none;
+    display: inline-block;
+    /* font-size: 10px; */
+    border-radius: 10px;
+    max-width: 150px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
