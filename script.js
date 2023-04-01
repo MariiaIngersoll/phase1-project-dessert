@@ -1,8 +1,9 @@
-// Global variables
+// declaring Global variables
 const desertInfoAppend = document.getElementById("results")
 const dropdown = document.getElementById("dropdown")
 const selectMenu = document.getElementById("nameOfDrink")
 const valueOfSelectedOption = document.getElementsByTagName("option")
+
 
 document.addEventListener("DOMContentLoaded",()=>{
     handleLoad()
@@ -27,8 +28,4 @@ function appendInfoToOption(dessert){
         }
     };
 
-function selectAnOption(){
-    valueOfSelectedOption.addEventListener("click", (){
-        const createImg = 
-    })
-}
+
