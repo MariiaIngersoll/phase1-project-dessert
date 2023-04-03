@@ -47,9 +47,7 @@
   margin-bottom: 800px;
 }
   
-#myPic{
-  
-}
+
 #results{
 align-items: center;
 max-width: 400px;
@@ -57,7 +55,7 @@ position: absolute;
 
 }
 
-#firstBtn{
+.buttons{
   background-color: #c35c88;
     border: none;
     color: #fffcff;
