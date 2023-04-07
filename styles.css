@@ -1,13 +1,12 @@
 
 .bckgr-picture {
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: black;
-            font-weight: bold;
-            
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  
 }
 
 .bckgr-picture::before {
@@ -44,13 +43,11 @@
   font-style: italic;
   font-size: 35px;
   width: 200vh;
-  margin-bottom: 800px;
+  margin-bottom: 900px;
 }
   
 
 #results{
-align-items: center;
-max-width: 400px;
 position: absolute;
 
 }
@@ -84,3 +81,18 @@ position: absolute;
     margin-top: 10px;
 }
 
+img{
+  max-width: 500px;
+  border-radius: 20%;
+}
+
+#savedDesserts{
+  margin-left: 800px;
+  background-color: #c35c88;
+    border: none;
+    color: #fffcff;
+    /* padding: 10px 6px; */
+    font-size: x-large;
+    border-radius: 10px
+    
+}
