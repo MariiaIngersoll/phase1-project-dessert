@@ -21,5 +21,9 @@ To install the JSON Server, please run the below command in your terminal:
 In your terminal, initialize the server connection by entering the below code in your local environment: 
 
         json-server --watch db.json
-        
+
 After cloning the repository, open the index.html file and enjoy.
+
+## Support
+
+For any questions, please reach out to maria.nagornaya1996@gmail.com  
