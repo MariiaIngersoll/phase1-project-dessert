@@ -82,7 +82,7 @@ function showDessertsInfo(cake) {
         dessertInfoAppend.append(h2, img, h4, ul, btn)
 
         img.addEventListener("mouseover", () => img.setAttribute("style", "box-shadow: 10px 20px #c35c88"))
-        img.addEventListener("mouseout", () => img.setAttribute("style", "box-shadow: 0px 0px"))
+        img.addEventListener("mouseout",()=> img.setAttribute("style", "box-shadow: 0 0") )
 
         //event listener for the Like Button. 
         btn.addEventListener('click', () => {
