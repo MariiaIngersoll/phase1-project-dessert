@@ -1,6 +1,6 @@
 // declaring Global variables
 
-//grabs div that i am gonna append the dessert info to
+//grabs div that i am gonna append the dessert`s info to
 const dessertInfoAppend = document.getElementById("results")
 //grabs the form 
 const form = document.getElementById("dropdown")
@@ -53,8 +53,8 @@ function showDessertsInfo(cake) {
         const h2 = document.createElement("h2")
         h2.textContent = cake.name
        //create heading for Ingridients
-        const h5 = document.createElement('h5')
-        h5.innerText= "INGREDIENTS:"
+        const h4 = document.createElement('h4')
+        h4.innerText= "INGREDIENTS:"
         //creates a list of ingredients as li elements 
         const ul = document.createElement("ul")
         const ingredients = cake.ingridients
@@ -69,15 +69,24 @@ function showDessertsInfo(cake) {
 
         //creates like button 
         const btn = document.createElement('button')
+        btn.setAttribute("id", "likeBtn")
         btn.innerText = "LIKE THIS RECIPE "
         btn.append(pLikes)
+        //i will add the instructions for each dessert once i figure out how css works
+        //code below adds an instruction for each dessert
+        // const h5 = document.createElement("h5")
+        // h5.textContent = cake.instruction
 
         dessertInfoAppend.textContent = ""
 
-        dessertInfoAppend.append(h2, img, h5, ul, btn)
+        dessertInfoAppend.append(h2, img, h4, ul, btn)
 
-        //event listener for the Like Button
+        img.addEventListener("mouseover", () => img.setAttribute("style", "box-shadow: 10px 20px #c35c88"))
+        img.addEventListener("mouseout", () => img.setAttribute("style", "box-shadow: 0px 0px"))
+
+        //event listener for the Like Button. 
         btn.addEventListener('click', () => {
+            //every time you click on the like button the number will go up by 1 
             cake.amountOfLikes += 1;
             pLikes.innerText = `${cake.amountOfLikes} likes`
             })
