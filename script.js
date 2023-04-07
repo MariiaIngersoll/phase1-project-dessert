@@ -1,11 +1,12 @@
 // declaring Global variables
 
 //grabs div that i am gonna append the dessert info to
-const desertInfoAppend = document.getElementById("results")
+const dessertInfoAppend = document.getElementById("results")
 //grabs the form 
 const form = document.getElementById("dropdown")
 //grabs the select menu
 const selectMenu = document.getElementById("nameOfDessert")
+//create variable that stores data we got from fetch
 let desserts = []
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -62,9 +63,23 @@ function showDessertsInfo(cake) {
             li.textContent = item
             ul.appendChild(li)
 
+        //creates a paragraph element that can hold dessert likes  
+        const pLikes = document.createElement('p')
+        pLikes.innerText = `${cake.amountOfLikes} likes`
 
-        desertInfoAppend.textContent = ""
-        //adds an instruction for cooking a specific dessert 
-        desertInfoAppend.append(h2, img, h5, ul)
+        //creates like button 
+        const btn = document.createElement('button')
+        btn.innerText = "LIKE THIS RECIPE "
+        btn.append(pLikes)
 
-        })}
+        dessertInfoAppend.textContent = ""
+
+        dessertInfoAppend.append(h2, img, h5, ul, btn)
+
+        //event listener for the Like Button
+        btn.addEventListener('click', () => {
+            cake.amountOfLikes += 1;
+            pLikes.innerText = `${cake.amountOfLikes} likes`
+            })
+        })
+    }
