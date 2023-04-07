@@ -29,10 +29,11 @@ function handleSubmit(e){
     e.preventDefault()
     //create a variable that captures the value of each option 
     const dessertName = e.target.select.value
+    console.log(dessertName)
     desserts.find(cake => {
-        cake.name = dessertName
+       if (cake.name === dessertName){
         showDessertsInfo(cake)
-        }
+        }}
     )
 }
     //appends a dessert name to the options list
@@ -44,10 +45,26 @@ function appendInfoToOption(dessert) {
 }
 // get the value of each option 
 function showDessertsInfo(cake) {
+       // adds an image for a dessert 
         const img = document.createElement("img")
         img.src = cake.pictureURL
+       //adds a dessert name 
         const h2 = document.createElement("h2")
         h2.textContent = cake.name
-        desertInfoAppend.append(h2, img)
+       //create heading for Ingridients
+        const h5 = document.createElement('h5')
+        h5.innerText= "INGREDIENTS:"
+        //creates a list of ingredients as li elements 
+        const ul = document.createElement("ul")
+        const ingredients = cake.ingridients
+        ingredients.forEach(item => {
+            const li = document.createElement("li")
+            li.textContent = item
+            ul.appendChild(li)
 
-    }
+
+        desertInfoAppend.textContent = ""
+        //adds an instruction for cooking a specific dessert 
+        desertInfoAppend.append(h2, img, h5, ul)
+
+        })}
