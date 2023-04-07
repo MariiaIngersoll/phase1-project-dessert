@@ -2,6 +2,7 @@
 .bckgr-picture {
   width: 100vw;
   height: 100vh;
+  margin-left: 30px;
   display: flex;
   align-items: center;
   color: black;
@@ -14,7 +15,7 @@
   background: url('najlacam-f8TajCVv4s8-unsplash.jpg') 
       no-repeat center center/cover;
   position: absolute;
-  opacity: 0.35;
+  opacity: 0.25;
   top: 0px;
   left: 0px;
   width: 100vw;
@@ -72,7 +73,6 @@ position: absolute;
     border: none;
     color: #fffcff;
     /* padding: 10px 6px; */
-    text-decoration: none;
     display: inline-block;
     /* font-size: 10px; */
     border-radius: 10px;
@@ -86,13 +86,13 @@ img{
   border-radius: 20%;
 }
 
-#savedDesserts{
-  margin-left: 800px;
+#likeBtn{
   background-color: #c35c88;
     border: none;
     color: #fffcff;
-    /* padding: 10px 6px; */
-    font-size: x-large;
-    border-radius: 10px
-    
+    border-radius: 10px;
+    max-width: 150px;
+    margin-left: 80px;
+    margin-top: 10px;
+    font-weight: bold;
 }
