@@ -1,7 +1,7 @@
 // declaring Global variables
 
-//grabs div that i am gonna append the dessert`s info to
-const dessertInfoAppend = document.getElementById("results")
+//grabs div that is going to append the dessert`s information
+const divWithDessertInfo = document.getElementById("results")
 //grabs the form 
 const form = document.getElementById("dropdown")
 //grabs the select menu
@@ -77,12 +77,12 @@ function showDessertsInfo(cake) {
         // const h5 = document.createElement("h5")
         // h5.textContent = cake.instruction
 
-        dessertInfoAppend.textContent = ""
+        divWithDessertInfo.textContent = ""
 
-        dessertInfoAppend.append(h2, img, h4, ul, btn)
+        divWithDessertInfo.append(h2, img, h4, ul, btn)
 
         img.addEventListener("mouseover", () => img.setAttribute("style", "box-shadow: 10px 20px #c35c88"))
-        img.addEventListener("mouseout",()=> img.setAttribute("style", "box-shadow: 0 0") )
+        img.addEventListener("mouseout",()=> img.setAttribute("style", "box-shadow: 0 0"))
 
         //event listener for the Like Button. 
         btn.addEventListener('click', () => {
@@ -91,4 +91,4 @@ function showDessertsInfo(cake) {
             pLikes.innerText = `${cake.amountOfLikes} likes`
             })
         })
-    }
+ }
