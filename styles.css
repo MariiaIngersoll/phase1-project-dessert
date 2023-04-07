@@ -98,3 +98,8 @@ img{
     margin-top: 10px;
     font-weight: bold;
 }
+
+h2, h4{
+  background-color: #d954a7;
+  font-family: fantasy;
+}
