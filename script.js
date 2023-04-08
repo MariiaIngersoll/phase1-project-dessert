@@ -25,8 +25,9 @@ function handleLoad() {
             })
             desserts = data
          } )};
-
+//function that handles the submit event
 function handleSubmit(e){
+    //prevents page from refreshing 
     e.preventDefault()
     //create a variable that captures the value of each option 
     const dessertName = e.target.select.value
@@ -44,7 +45,7 @@ function appendInfoToOption(dessert) {
         selectMenu.appendChild(newOption)
         
 }
-// get the value of each option 
+// appending the value of each option to the page
 function showDessertsInfo(cake) {
        // adds an image for a dessert 
         const img = document.createElement("img")
@@ -63,16 +64,17 @@ function showDessertsInfo(cake) {
             li.textContent = item
             ul.appendChild(li)
 
-        //creates a paragraph element that can hold dessert likes  
-        const pLikes = document.createElement('p')
-        pLikes.innerText = `${cake.amountOfLikes} likes`
+        //creates a paragraph element that holds dessert likes  
+        const likePar = document.createElement('p')
+        likePar.innerText = `${cake.amountOfLikes} likes`
 
         //creates like button 
         const btn = document.createElement('button')
         btn.setAttribute("id", "likeBtn")
-        btn.innerText = "LIKE THIS RECIPE "
-        btn.append(pLikes)
-        //i will add the instructions for each dessert once i figure out how css works
+        btn.innerText = "LIKE THIS DESSERT "
+        btn.append(likePar)
+        //i will add the instructions for each dessert once i figure out how to do it in css
+
         //code below adds an instruction for each dessert
         // const h5 = document.createElement("h5")
         // h5.textContent = cake.instruction
@@ -88,7 +90,7 @@ function showDessertsInfo(cake) {
         btn.addEventListener('click', () => {
             //every time you click on the like button the number will go up by 1 
             cake.amountOfLikes += 1;
-            pLikes.innerText = `${cake.amountOfLikes} likes`
+            likePar.innerText = `${cake.amountOfLikes} likes`
             })
         })
  }
