@@ -17,7 +17,8 @@ To install the JSON Server, please run the below command in your terminal:
 
         npm install -g json-server
 
-#2. Start your JSON Server 
+2. Start your JSON Server 
+
 In your terminal, initialize the server connection by entering the below code in your local environment: 
 
         json-server --watch db.json
