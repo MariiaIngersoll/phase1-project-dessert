@@ -1,5 +1,5 @@
-# Dessert Recipes Finder
-Phase 1 Project Assignment called Dessert Recipes Finder app
+# Dessert Recipe Finder
+Phase 1 Project Assignment called Dessert Recipe Finder app
 
 # Description 
 This app has 7 different dessert recipes. You can select a recipe by choosing the one you like from the dropdown menu. 
