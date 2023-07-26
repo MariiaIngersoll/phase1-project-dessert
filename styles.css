@@ -1,105 +1,115 @@
-
-.bckgr-picture {
-  width: 100vw;
-  height: 100vh;
-  margin-left: 30px;
+.container {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  color: black;
-  font-weight: bold;
-  
+  height: 100%;
+  overflow: hidden; 
+  position: relative;
 }
 
-.bckgr-picture::before {
-  content: '';
-  background: url('backgroundImg.jpg') 
-      no-repeat center center/cover;
-  position: absolute;
-  opacity: 0.25;
-  top: 0px;
-  left: 0px;
-  width: 100vw;
-  height: 100vh;
-  
-  }
-
-#dropdown {
-  padding-bottom: 774px;
-  position: relative;
-  padding-right: 200px;
-  color:#ff009f;
-  opacity: 1;
-  text-align: center;
-  display: inline-grid;
-  float: right;
+.select-label {
+  color: crimson; 
   font-size: x-large;
-}
-#h1{
-  text-align: center;
-  position: relative;
-  padding-left: 200px;
-  /* padding-bottom: 800px; */
-  color: #ff009f;
-  opacity: 1;
-  font-style: italic;
-  font-size: 35px;
-  width: 200vh;
-  margin-bottom: 900px;
-}
-  
-
-#results{
-position: absolute;
-
-}
-
-#submitBtn{
-  background-color: #c35c88;
-  border: none;
-  color: #fffcff;
-  padding: 10px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 400px;
-  max-width: 100px;
-  margin-top: 10px;
-  margin-left: 100px;
-}
-#buttonDiv {
-  position: absolute;
-  margin-top: 800px;
-}
-#selectBtn{
-    background-color: #c35c88;
-    border: none;
-    color: #fffcff;
-    /* padding: 10px 6px; */
-    display: inline-block;
-    /* font-size: 10px; */
-    border-radius: 10px;
-    max-width: 150px;
-    margin-left: 80px;
-    margin-top: 10px;
-}
-
-img{
-  max-width: 500px;
-  border-radius: 20%;
-}
-
-#likeBtn{
-  background-color: #c35c88;
-    border: none;
-    color: #fffcff;
-    border-radius: 10px;
-    max-width: 150px;
-    margin-left: 80px;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-h2, h4{
-  background-color: #d954a7;
   font-family: fantasy;
+  padding-right: 10px;
+}
+
+
+/* Add styling for the select-menu */
+.select-menu select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 2px solid palevioletred;
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+  font-size: 16px;
+  font-family: fantasy;
+  color: crimson;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 30px;
+}
+
+.select-menu select::-ms-expand {
+  display: none;
+}
+
+
+.select-menu select:hover,
+.select-menu select:focus {
+  border-color: crimson;
+  outline: none;
+}
+
+
+.background {
+  height: 100%;
+  background-image: url('./backgroundImg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5; 
+}
+
+
+.dessert-info {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 85px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  
+}
+
+.dessert-info img {
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dessert-info h2 {
+  color: #dd6248;;
+  margin-top: 10px;
+}
+
+.dessert-info h4 {
+  color: #555;
+  margin-top: 30px;
+
+}
+
+.dessert-info ul {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.dessert-info li {
+  margin-bottom: 5px;
+}
+
+.dessert-info button#likeBtn {
+  background-color: #dd6248;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dessert-info button#likeBtn:hover {
+  background-color: #e6008f;
 }

@@ -1,28 +1,25 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Dessert Menu</title>
-  <link rel="stylesheet" type="text/css" href="styles.css" />
- 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find your new favorite dessert!</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <div class="bckgr-picture">
-  <h1 id="h1">FIND YOUR NEW FAVORITE DESSERT</h1>
-    <!-- form to display the names of desserts -->
-  <form id="dropdown">
-    <label for = "dropdown-menu"> Pick A Dessert</label>
-    <select name="select" id="nameOfDessert" >
-  </select>
-  <button id="submitBtn">PICK</button>
-  </form>
-  <!-- div that will display selected dessert -->
-  <div id="results">
+  <div class="select-menu">
+    <label for="dropdown" class="select-label">PICK YOUR FAVORITE DESSERT! YUMMY😍</label>
+    <select id = "dropdown">
+        <option value="option1">Select from these options...</option>
+    </select>
+</div>
+
+  <div class="background"></div>
+  <div class="container">
   </div>
-  </div>
+  <div class="dessert-info">
+    <!-- Information about the selected dessert will be dynamically added here -->
+</div>
 </body>
 <script defer type="text/javascript" src="script.js"></script>
-
 </html>
